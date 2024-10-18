@@ -26,7 +26,7 @@ You are tasked with building a basic structure to manage activities, payments, a
 ## Functions and Methods
 
 ### Activity
-This is the base class that handles the `amount` and can be extended to other activities.
+This base class handles the `amount` and can be extended to other activities.
 
 ### Payment (Inherits from Activity)
 This class extends the functionality of `Activity` by adding the `receiver`.
@@ -92,7 +92,7 @@ console.log(refund.getSender());  // Output: Bob
 
 ## Input Format for Custom Testing
 
-- The first line specifies the object to be created: either `Payment` or `Refund`.
+- The first line specifies the object to be created: `Payment` or `Refund`.
 - The second line contains space-separated values representing the initial parameters:
   - For `Payment`, it includes the `amount` and `receiver`.
   - For `Refund`, it includes the `amount` and `sender`.
